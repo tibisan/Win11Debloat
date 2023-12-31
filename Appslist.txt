@@ -1,6 +1,8 @@
 # The apps below this line WILL be uninstalled. If you wish to KEEP any of the apps below
 #  simply add a # character in front of the specific app in the list below.
 #
+*OneDriveSync*
+*Microsoft.OneDrive*
 *Clipchamp.Clipchamp*
 *Microsoft.3DBuilder*
 *Microsoft.549981C3F5F10*   #Cortana app
@@ -98,27 +100,27 @@
 #*Microsoft.MSPaint*                      # Paint 3D
 #*Microsoft.Paint*                        # Classic Paint
 #*Microsoft.ScreenSketch*                 # Snipping Tool
-#*Microsoft.Whiteboard*                   # Only preinstalled on devices with touchscreen and/or pen support
+*Microsoft.Whiteboard*                   # Only preinstalled on devices with touchscreen and/or pen support
 #*Microsoft.Windows.Photos*
 #*Microsoft.WindowsCalculator*
-#*Microsoft.WindowsCamera*
+*Microsoft.WindowsCamera*
 #*Microsoft.WindowsStore*                 # Microsoft Store, WARNING: This app cannot be reinstalled!
 #*Microsoft.WindowsTerminal*              # New default terminal app in windows 11
 #*Microsoft.Xbox.TCUI*                    # UI framework, seems to be required for MS store, photos and certain games
 #*Microsoft.XboxIdentityProvider*         # Xbox sign-in framework, required for some games
 #*Microsoft.XboxSpeechToTextOverlay*      # Might be required for some games, WARNING: This app cannot be reinstalled!
 #*Microsoft.YourPhone*                    # Phone link
-#*Microsoft.ZuneMusic*                    # Modern Media Player
+*Microsoft.ZuneMusic*                    # Modern Media Player
 
 # The apps below will NOT be uninstalled unless selected during the custom setup selection or when
 #  launching the script with the specific parameters found in the README.md file. 
 #
-#*Microsoft.GamingApp*                    # Modern Xbox Gaming App, required for installing some PC games
-#*Microsoft.OutlookForWindows*            # New mail app: Outlook for Windows
-#*Microsoft.People*                       # Required for & included with Mail & Calendar
-#*Microsoft.PowerAutomateDesktop*
+*Microsoft.GamingApp*                    # Modern Xbox Gaming App, required for installing some PC games
+*Microsoft.OutlookForWindows*            # New mail app: Outlook for Windows
+*Microsoft.People*                       # Required for & included with Mail & Calendar
+*Microsoft.PowerAutomateDesktop*
 #*Microsoft.RemoteDesktop*
-#*Microsoft.windowscommunicationsapps*    # Mail & Calendar
-#*Microsoft.XboxGameOverlay*              # Game overlay, required/useful for some games
-#*Microsoft.XboxGamingOverlay*            # Game overlay, required/useful for some games
-#*Windows.DevHome*
+*Microsoft.windowscommunicationsapps*    # Mail & Calendar
+*Microsoft.XboxGameOverlay*              # Game overlay, required/useful for some games
+*Microsoft.XboxGamingOverlay*            # Game overlay, required/useful for some games
+*Windows.DevHome*
