@@ -142,7 +142,10 @@ function ClearStartMenu {
     param(
         $message
     )
-
+    
+    Write-Output "Clear pinned apps disabled"
+    return
+    
     Write-Output $message
 
     # Path to start menu template
