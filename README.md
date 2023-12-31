@@ -6,9 +6,6 @@ Download and extract https://github.com/tibisan/Win11Debloat/archive/main.zip ru
 
 
 
-
-https://codeload.github.com/tibisan/Win11Debloat/zip/refs/heads/main
-
 # Win11Debloat
 
 Win11Debloat is a simple and lightweight powershell script that removes pre-installed windows bloatware apps, disables telemetry and declutters the experience by disabling or removing intrusive interface elements, ads and more. No need to painstakingly go through all the settings yourself, or remove apps one by one. Win11Debloat makes the process quick and easy!
