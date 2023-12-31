@@ -1,5 +1,12 @@
 This is a fork please supoort the original author
 
+I have just added the support to remove OneDrive injected in the run.bat and also customized the applist
+
+Download and extract https://github.com/tibisan/Win11Debloat/archive/main.zip run as admin Run.bat from the extracted folder.
+
+
+
+
 https://codeload.github.com/tibisan/Win11Debloat/zip/refs/heads/main
 
 # Win11Debloat
