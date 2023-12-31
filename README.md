@@ -1,4 +1,4 @@
-This is a fork please supoort the original author
+This is a fork please supoort the original author here https://github.com/Digressive/Remove-MS-Store-Apps
 
 I have just added the support to remove OneDrive injected in the run.bat and also customized the applist
 
