@@ -2,6 +2,10 @@
 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters" /v DisabledComponents /t REG_DWORD /d 255 /f
 
+@echo Rearm Windows Firewall by zeroing the default rules
+
+REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
+REG add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 
 PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%~dp0Win11Debloat.ps1""' -Verb RunAs}"
 
@@ -41,6 +45,13 @@ REG DELETE "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2E
 
 PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe'  -OutFile $env:temp\brave_installer-x64.exe}"
 PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath  $env:temp\brave_installer-x64.exe -ArgumentList '--install --silent --system-level' -Wait -Verb RunAs}"
+
+
+PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi'  -OutFile $env:temp\Cloudflare_WARP_Release-x64.msi}"
+PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath msiexec.exe -ArgumentList '/i $env:temp\Cloudflare_WARP_Release-x64.msi  /qn /norestart' -Wait -Verb RunAs}"
+
+
+https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi
 
 @ECHO Please wait while we install HyperV
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
