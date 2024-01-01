@@ -142,8 +142,7 @@ function ClearStartMenu {
     param(
         $message
     )
-    
-    Write-Output "Clear pinned apps disabled"
+    #We don't clear anything just return
     return
     
     Write-Output $message
