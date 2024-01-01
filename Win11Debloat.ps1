@@ -338,7 +338,7 @@ if ((-not $PSBoundParameters.Count) -or $RunDefaults -or $RunWin11Defaults -or (
         # Default mode, no user input required, all (relevant) options are added
         '1' { 
             # $DefaultParameterNames = 'RemoveApps','DisableTelemetry','DisableBing','DisableLockscreenTips','DisableSuggestions','ShowKnownFileExt','DisableWidgets','HideChat','DisableCopilot'
-            $DefaultParameterNames = 'RemoveApps','DisableTelemetry','DisableBing','DisableLockscreenTips','DisableSuggestions','ShowKnownFileExt','DisableWidgets','HideChat','DisableCopilot','RevertContextMenu','TaskbarAlignLeft','HideSearchTb','HideTaskview','ShowHiddenFolders','HideDupliDrive'
+            $DefaultParameterNames = 'RemoveApps','DisableTelemetry','DisableBing','DisableLockscreenTips','DisableSuggestions','DisableWidgets','HideChat','DisableCopilot','TaskbarAlignLeft','HideSearchTb','HideTaskview','ShowKnownFileExt','ShowHiddenFolders','HideDupliDrive'
 
             PrintHeader 'Default Configuration'
 
