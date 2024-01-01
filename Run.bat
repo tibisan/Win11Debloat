@@ -51,8 +51,6 @@ PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://1111-
 PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath msiexec.exe -ArgumentList '/i $env:temp\Cloudflare_WARP_Release-x64.msi  /qn /norestart' -Wait -Verb RunAs}"
 
 
-https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi
-
 @ECHO Please wait while we install HyperV
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
+REM Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 
