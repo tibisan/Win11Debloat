@@ -46,14 +46,14 @@ REG DELETE "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2E
 
 @ECHO Please wait while we install Brave Browser
 
-PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe'  -OutFile $env:temp\brave_installer-x64.exe}"
-PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath  $env:temp\brave_installer-x64.exe -ArgumentList '--install --silent --system-level' -Wait -Verb RunAs}"
+rem PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe'  -OutFile $env:temp\brave_installer-x64.exe}"
+rem PowerShell -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath  $env:temp\brave_installer-x64.exe -ArgumentList '--install --silent --system-level' -Wait -Verb RunAs}"
 
 
 @ECHO Please wait while we install Cloudflare WARP
 
-PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi'  -OutFile $env:temp\Cloudflare_WARP_Release-x64.msi}"
-msiexec.exe /i %TEMP%\Cloudflare_WARP_Release-x64.msi  /qn /norestart
+rem PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest 'https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi'  -OutFile $env:temp\Cloudflare_WARP_Release-x64.msi}"
+rem msiexec.exe /i %TEMP%\Cloudflare_WARP_Release-x64.msi  /qn /norestart
 
 
 @ECHO Please wait while we install HyperV
